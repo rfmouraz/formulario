@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h2>Questionário</h2>
+            <form action="https://www.w3schools.com/html/html_form_input_types.asp">
+                <table border="1" cellspacing="0">
+                    <tr>
+                        <td colspan="6" align="center">Dados Pessoais</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label> Nome: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="Nome" name="Nome" size="30" maxlength="2" placeholder="Digite seu Nome Completo" required>
+                        </td>
+                        <td>
+                            <label> Email: </label>
+                        </td>
+                        <td>
+                            <input type="email" name="mail" id="mail" size="30" maxlength="" placeholder="Digite seu E-mail" required>
+                        </td>
+                        <td>
+                            <label> CPF: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="cpf" name="cpf" max="99999999999" size="30" placeholder="Informe seu CPF(Somente Número)" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Nascimento</label>
+                        </td>
+                        <td>
+                            <input type="date" id="data_nasc" name="data_nasc"
+                            min="1950-01-01" max="2023-01-01" required>
+                        </td>
+                        <td>
+                            <label>Senha:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="senha" id="senha" maxlength="8" size="30" placeholder="Digite sua senha" required>
+                        </td>
+                        <td>
+                            <label>Confirmar senha:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="senha" id="senha" maxlength="8" size="30" placeholder="Digite sua senha" required>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td align="center" colspan="6">
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Limpar tudo"
+                            </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <fieldset>
+                                <legend>Preferências</legend>
+                                <label>Cor favorita</label>
+                                <input type="color" name="cor" id="cor" required><br><br>
+                                <label>Sexo</label><br>
+                                <input type="radio" id="feminino" name="feminino" value="masculino">
+                                <label for="feminino">Feminino</label>
+                                <input type="radio" id="masculino" name="masculino" value="masculino">
+                                <label for="masculino">Masculino</label><br><br>
+                                <label>Gosto Musical:</label><br>
+                                <input type="checkbox" id="rock" name="rock" value="rock">
+                                <label for="rock">Rock</label>
+                                <input type="checkbox" id="funk" name="funk" value="funk">
+                                <label for="funk">Funk</label><br>
+                                <input type="checkbox" id="sertanejo" name="sertanejo" value="sertanejo">
+                                <label for="sertanejo">Sertanejo</label>
+                                <input type="checkbox" id="pagode" name="pagode" value="pagode">
+                                <label for="pagode">Pagode</label>
+                            </fieldset>
+                        </td>
+                        <td colspan="3">
+                            <fieldset>
+                                <legend>Perfil</legend>
+                                <label>Altura:</label>
+                                <input type="text" id="altura" size="10" name="altura">cm<br>
+                                <label>Peso:</label>
+                                <input type="text" id="peso" size="10" name="peso">kg<br>
+                                <label for="treino">De 0 a 10, seu nível de atividade física:</label><br>
+                                0
+                                <input type="range" id="treino" name="treino" min="0" max="10">10
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" align="center">
+                            <input type="submit" value="Enviar tudo">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </body>
+</html>
